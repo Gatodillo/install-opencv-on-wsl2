@@ -26,7 +26,7 @@ Install necessary libraries:
 sudo apt install pkg-config libgtk-3-dev
 sudo apt install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev
 sudo apt install libjpeg-dev libpng-dev libtiff-dev gfortran openexr libatlas-base-dev
-sudo apt install python3-dev python3-numpy libtbb2 libtbb-dev libdc1394-22-dev
+sudo apt install python3-dev python3-numpy libtbbmalloc2 libdc1394-dev
 ```
 
 ## Step 2. Download OpenCV

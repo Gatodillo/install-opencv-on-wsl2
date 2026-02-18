@@ -105,7 +105,8 @@ This should print your installed OpenCV version.
 
 ## Extra: 
 
-1. Install CUDA 12.6 and CuDNN 9 on WSL before OpenCV: https://medium.com/@mominaman/pytorch-tensorflow-cuda-wsl2-b4931a309eb0
+1. Share Windows USB Webcam with WSL: https://learn.microsoft.com/en-us/windows/wsl/connect-usb
+2. Install CUDA 12.6 and CuDNN 9 on WSL before OpenCV: https://medium.com/@mominaman/pytorch-tensorflow-cuda-wsl2-b4931a309eb0
 
 
 

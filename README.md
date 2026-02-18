@@ -103,5 +103,9 @@ cv2.__version__
 ```
 This should print your installed OpenCV version.
 
+## Extra: 
+
+1. Install CUDA 12.6 and CuDNN 9 on WSL before OpenCV: https://medium.com/@mominaman/pytorch-tensorflow-cuda-wsl2-b4931a309eb0
+
 
 

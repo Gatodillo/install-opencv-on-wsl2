@@ -62,6 +62,20 @@ cmake -DCMAKE_BUILD_TYPE=RELEASE -D OPENCV_GENERATE_PKGCONFIG=ON -DOPENCV_ENABLE
 make -j4 #increasing the number will make building faster. Maximum value can be found by running nproc.
 sudo make install
 ```
+
+Check if the linker cache includes OpenCV.
+
+```bash
+ldconfig -p | grep opencv
+```
+
+If not, then:
+
+```bash
+echo "/usr/local/lib" | sudo tee /etc/ld.so.conf.d/opencv.conf
+sudo ldconfig
+```
+
 ## Step 4. Include path for Gcc
 
 OpenCV should now be installed but compiling C++ with opencv won't work yet.
@@ -78,6 +92,7 @@ export CPLUS_INCLUDE_PATH
 
 For compiling add `pkg-config --cflags --libs opencv4` to gcc options.
 
+
 ## Step 5. Testing
 
 The easiest way to test the installation is to run python3 and enter the following commands:
@@ -87,3 +102,6 @@ import cv2
 cv2.__version__
 ```
 This should print your installed OpenCV version.
+
+
+
